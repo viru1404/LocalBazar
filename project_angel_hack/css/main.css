@@ -1,0 +1,153 @@
+/* Css for Angel hack hackathon Project */
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+
+* {
+	border: 0px solid red;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	transition: all 1s;
+}
+
+body, html {
+	height: 100%;
+	animation: back 15s infinite;
+	background-position: center;
+	background-size: auto;
+	background-attachment: fixed;
+}
+
+.outerbox {
+	height: 100%;
+	transition: all .5s;
+}
+
+.intro {
+	margin-top: 50%;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.login {
+	opacity: 0;
+	text-align: center;
+	transition: all 1s;
+}
+
+.lform {
+	opacity: 01
+	transition: all 1s
+}
+
+.xfont {
+	font-size: 20px;
+}
+
+.submit {
+	background-color: rgba(255, 255, 255, 0.60);
+	color:black;
+	padding: 2%;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 20px;
+	transition: all .2s;
+}
+
+.submit:hover {
+	background-color: rgba(255, 255, 255, 0.90)
+}
+
+.submit1 {
+	background-color: rgba(255, 255, 255, 0.60);
+	color:black;
+	padding: 2%;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 20px;
+	transition: all .2s;
+}
+
+.submit1:hover {
+	background-color: rgba(255, 255, 255, 0.90)
+}
+
+.submit2 {
+	background-color: rgba(255, 255, 255, 0.60);
+	color:black;
+	padding: 2%;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 20px;
+	transition: all .2s;
+}
+
+.submit2:hover {
+	background-color: rgba(255, 255, 255, 0.90)
+}
+
+.submit3 {
+	background-color: rgba(255, 255, 255, 0.60);
+	color:black;
+	padding: 2%;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 20px;
+	transition: all .2s;
+}
+
+.submit3:hover {
+	background-color: rgba(255, 255, 255, 0.90)
+}
+
+
+.trans {
+	opacity: .5;
+	transition: all .2s;
+}
+
+.trans:focus {
+	opacity: 1;
+}
+
+.navbar {
+	width: 100%;
+	transition: all 1s;
+	transform: scale3d(0,1.2,1);
+}
+
+.option {
+	margin-top: 20%;
+	transition: all 1s;
+	opacity: 0;
+	text-align: Center;
+	font-size: 20px;
+	border:1px solid white;
+	background-color: rgba(0, 0, 0, 0.35);
+	padding: 2%;
+}
+
+#Image:hover {
+	opacity: 1;
+}
+
+input {
+	transition: all .5s;
+}
+
+table {
+	margin-top: 2%;
+}
+
+td {
+	border: 1px solid white;
+}
+
+tr {
+	border: 1px solid white;
+}
+
+@keyframes back {
+	0%{background-image: url("../images/5.jpg");}
+	25%{background-image: url("../images/2.jpg");}
+	50%{background-image: url("../images/3.jpg");}
+	75%{background-image: url("../images/4.jpg");}
+	100%{background-image: url("../images/5.jpg");}
+}
