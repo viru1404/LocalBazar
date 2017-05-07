@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angel Hack</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Yanone+Kaffeesatz" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+<!-- Preload Images -->
+<img src="images/2.jpg" style="display: none">
+<img src="images/3.jpg" style="display: none">
+<img src="images/4.jpg" style="display: none">
+<img src="images/5.jpg" style="display: none">
+
+<!-- Main Html -->
+<div class="outerbox container-fluid">
+	<div class="col-md-3" id="1">
+	
+	</div>
+	<div class="col-md-6" style="height: 100%" id="main">
+		<!-- Nav Bar Start-->
+		<nav class="navbar navbar-inverse xnav" style="opacity: 0;transition: all 1s">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#" style="transition: all .2s">Local Bazaar | Dashboard</a>
+		    </div>
+		    <ul class="nav navbar-nav" style="float: right;">
+		      <li class="active"><a href="#" style="transition: all .2s" class="homeb">Home</a></li>
+		      <li><a href="#" style="transition: all .2s" class="subadd">Add Product</a></li>
+		      <li><a href="#" style="transition: all .2s"class="subremove">Update Product</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		<!-- Nav bar Ends-->
+		<div class="col-md-3 current home">
+		</div>
+		<div class="option col-md-6 current home">
+			<h1> Choose Your Option</h1>
+			<button class="submit1 subadd" style="margin-top: 1%">Add A Product</button>
+			<button class="submit2 subremove" style="margin-top: 1%">Update Product</button>
+		</div>
+		<div class="col-md-3 current home">
+		</div>
+		<!-- Add Product-->
+		<div class="col-md-12 add current" style="margin-top: 2%;">
+			<div class="col-md-2"></div>
+			<form class="lform col-md-8" style="border: 1px solid white;padding: 2%;background-color: rgba(0,0,0,.30);" id="add_product">
+				<div class="form-group">
+				    <label for="name"><span class="xfont">Product Name:</span></label>
+				    <input type="text" class="form-control trans" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+				    <label for="category"><span class="xfont">Category:</span></label>
+				    <input type="text" class="form-control trans" id="category" name="category" required>
+				</div>
+				<div class="form-group">
+				    <label for="Cost"><span class="xfont">Cost:</span></label>
+				    <input type="Number" class="form-control trans" id="cost" name="cost" required>
+				</div>
+				<div class="form-group">
+				    <label for="quantity"><span class="xfont">Quantity:</span></label>
+				    <input type="number" class="form-control trans" id="quantity" name="quantity" required>
+				</div>
+				<div class="form-group">
+				    <label for="image"><span class="xfont">Image:</span></label>
+				    <input type="text" class="form-control trans" id="image" value="https://lh6.ggpht.com/YXtcy5SeHevSEqTMUNuyhSXVwiGWKkOX-QvoLQDFA1cxQqOaDcXD7cGSiwJYQFOLTg=w300" name="image" required>
+				</div>
+				  <button class="submit1" type="submit"><span class="xfont" style="color:black">Submit</span></button>
+			</form>
+			<div class="col-md-2"></div>
+		</div>
+		<!-- Remove Product -->
+		<div class="col-md-12 remove current" style="margin-top: 2%;" id="remove_product">
+			<div class="col-md-2"></div>
+			<form class="lform col-md-8" style="border: 1px solid white;padding: 2%;background-color: rgba(0,0,0,.30);">
+				<div class="form-group">
+				    <label for="name"><span class="xfont">Product Name:</span></label>
+				    <input type="text" class="form-control trans" id="namer" name="name" required>
+				</div>
+				<div class="form-group">
+				    <label for="Cost"><span class="xfont">Cost:</span></label>
+				    <input type="Number" class="form-control trans" id="costr" name="cost" required>
+				</div>
+				<div class="form-group">
+				    <label for="quantity"><span class="xfont">Quantity:</span></label>
+				    <input type="number" class="form-control trans" id="quantityr" name="quantity" required>
+				</div>
+				  <button class="submit2" type="submit"><span class="xfont" style="color:black">Submit</span></button>
+				<div class="col-md-12" id="tablex">
+				</div>
+			</form>
+			<div class="col-md-2"></div>
+		</div>
+		<!-- Intro Start-->
+		<div class="col-md-12 intro" id="bam" style="text-align: center;">
+			<h1 class="itext">Welcome</h1>
+		</div>
+		<div class="col-md-12 login">
+		<h1>Enter Your Login Details</h1> 
+			<div class="col-md-2"></div>
+			<div class="lform col-md-8">
+				<div class="form-group">
+				    <label for="email"><span class="xfont">Email address:</span></label>
+				    <input type="email" class="form-control trans" id="email">
+				</div>
+				<div class="form-group">
+				    <label for="pwd"><span class="xfont">Password:</span></label>
+				    <input type="password" class="form-control trans" id="pwd">
+				</div>
+				<div class="checkbox">
+				    <label><input type="checkbox">Remember me</label>
+				</div>
+				  <button class="submit"><span class="xfont" style="color:black">Submit</span></button>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<!-- Intro Ends-->
+	</div>
+	<div class="col-md-3" id="3">
+	
+	</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.shuffleText.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(function() {
+	$(".lform").hide();
+	$(".navbar").hide();
+	$(".option").hide();
+	$(".add").hide();
+	$(".remove").hide();
+	setTimeout(function(){
+		$(".intro").css({
+			"opacity":"1",
+			"margin-top":"40%"
+		});
+		setTimeout(function() {$(".itext").shuffleText("Local Bazaar");},1000);
+		setTimeout(function() {
+			$(".intro").css({
+				"opacity":"0",
+				"margin-top":"30%"
+			});
+			$(".login").css({
+				"opacity":"1",
+				"border":"1px solid white"
+			});
+			setTimeout(function(){
+				$(".intro").css({"visibility":"hidden","margin-top":"10%"});
+				$(".login").css({
+					"padding-bottom":"10%"
+				});
+				setTimeout(function() {
+					$(".lform").show()
+					setTimeout(function(){
+						$(".lform").css({
+						"opacity":"1"
+					})},1000);
+					$("login").css({
+						"padding-bottom":"2%"
+					})
+				},400)
+			},700)
+		},2500);
+	},500);
+	$(".submit").click(function(){
+		$(".login").css({
+			"transform":"translateY(-200px)",
+			"opacity" : "0"
+		});
+		setTimeout(function(){
+			$(".login").hide();
+			$("#1").removeClass("col-md-3");
+			$("#main").removeClass("col-md-6");
+			$("#3").removeClass("col-md-3");
+			$("#1").addClass("col-md-1");
+			$("#main").addClass("col-md-10");
+			$("#3").addClass("col-md-1");
+			$(".navbar").show();
+			$(".option").show();
+			setTimeout(function(){
+				$(".navbar").css({
+					"opacity":"1",
+					"transform":"scale3d(1.2,1.2,1)"
+				});
+				$(".option").css({
+					"opacity":"1",
+				})
+			},500)
+		},1000)
+	});
+	$(".subadd").click(function(){
+		$(".add").removeClass("current");
+		$(".current").css({
+			"opacity":"0"
+		});
+		setTimeout(function(){
+				$(".current").hide();
+				$(".add").show();
+				$(".add").addClass("current");
+				setTimeout(function(){
+					$(".current").css({
+							"opacity":"1"
+					});		
+				},2000)
+		},1000)
+	});
+	$(".homeb").click(function(){
+		$(".home").removeClass("current");
+		$(".current").css({
+			"opacity":"0"
+		});
+		setTimeout(function(){
+				$(".current").hide();
+				$(".home").show();
+				$(".home").addClass("current");
+				setTimeout(function(){
+					$(".current").css({
+							"opacity":"1"
+					});		
+				},1000)	
+		},1000)	
+	});
+	$(".subremove").click(function(){
+		$(".remove").removeClass("current");
+		$(".current").css({
+			"opacity":"0"
+		});
+		setTimeout(function(){
+				$(".current").hide();
+				$(".remove").show();
+				$(".remove").addClass("current");
+				setTimeout(function(){
+					$(".current").css({
+							"opacity":"1"
+					});		
+				},1000)
+		},1000)	
+	});
+})
+</script>
+</html>
